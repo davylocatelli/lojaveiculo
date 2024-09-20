@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Loja de Veículos
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div class="container clearfix">
+            <div class="col-4">
+                <h1 style="padding-top: 15px;">Loja de Veículos</h1>
+            </div>
+            <img src="img/carrologo.png" alt="carrologo" style="width:70px; float: right;">
+        </div>
+    </div>
+    <div class="container clearfix">
+        <div class="col-4 veic">
+            <h2 style="padding-bottom: 8px;">Cadastrar Novo Veículo</h2>
+            <form action="action.php" method="post">
+                <table>
+                    <tr>
+                        <td><input type="number" name="cdveiculo" placeholder="Digite o código do Veículo"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="vlveiculo" placeholder="Digite o valor do Veículo"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="anoveiculo" placeholder="Digite o ano do Veículo"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="placaveiculo" placeholder="Digite a placa do Veículo"></td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding-top: 10px;"><input type="submit" name="save" value="Cadastrar"
+                                style="border: none; padding: 10px; width: 100px;font-weight: bold;background-color: #000055; color: white;"></td>
+                    </tr>
+
+                </table>
+        </div>
+        <div id="cliente">
+            <div class="col-4 clien">
+                <h2 style="padding-bottom: 8px;">Cadastrar Novo cliente</h2>
+                <form action="action.php" method="post">
+                    <table>
+                        <tr>
+                            <td><input type="number" name="cdcliente" placeholder="Digite o código do Cliente"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="nmcliente" placeholder="Digite o nome completo do Cliente">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="emailcliente" placeholder="Digite o email do Cliente"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="endcliente" placeholder="Digite o endereço do Cliente"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top: 10px;"><input type="submit" name="save" value="Cadastrar"
+                                    style="border: none; padding: 10px; width: 100px;font-weight: bold;background-color: #000055; color: white;"></td>
+                        </tr>
+
+                    </table>
+            </div>
+        </div>
+        <div class="col-4 forn">
+            <h2 style="padding-bottom: 8px;">Cadastrar Novo Fornecedor</h2>
+            <form action="action.php" method="post">
+                <table>
+                    <tr>
+                        <td><input type="number" name="cdcliente" placeholder="Digite o código do Fabricante"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="nmcliente" placeholder="Digite o nome completo do fabricante"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="emailcliente" placeholder="Digite o email do Fabricante"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="endcliente" placeholder="Digite o endereço do Fabricante"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 10px;"><input type="submit" name="save" value="Cadastrar"
+                                style="border: none; padding: 10px; width: 100px; font-weight: bold;background-color: #000055; color: white;"></td>
+                    </tr>
+
+                </table>
+        </div>
+    </div>
+    <footer>
+
+        Todos os direitos reservados a Loja de Veículos© - 2024
+    </footer>
+</body>
