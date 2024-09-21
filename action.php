@@ -9,15 +9,17 @@ if(!$conn)
 {
    die("Failed:" . mysqli_connect_error());
 }
-if(isset($_POST['save'])) 
+if(isset($_POST['save1'])) 
 {
-  $cdaluno = $_POST['cdaluno'];     
-  $nmaluno = $_POST['nmaluno'];
+  $cdveiculo = $_POST['cdveiculo'];     
+  $vlveiculo = $_POST['vlveiculo'];
+  $anoveiculo = $_POST['anoveiculo'];     
+  $placaveiculo = $_POST['placaveiculo'];
 
-$sql_query = "INSERT INTO aluno (cdaluno,nmaluno) VALUES ('$cdaluno','$nmaluno')";
+$sql_query = "INSERT INTO veiculos (cdveiculo,vlveiculo,anoveiculo,placaveiculo) VALUES ('$cdveiculo','$vlveiculo','$anoveiculo','$placaveiculo')";
 if(mysqli_query($conn,$sql_query))
 {
-    echo "aluno cadastrado com sucesso!";
+    echo "Veículo cadastrado com sucesso!";
 }
 else
 {
